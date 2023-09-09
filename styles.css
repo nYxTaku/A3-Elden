@@ -1,0 +1,469 @@
+/* Default Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Gabriola;
+    scroll-behavior: smooth;
+}
+
+/* main section with the background image */
+.main-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+/* background image */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 2s;
+}
+
+/* header section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Logo */
+.logo img {
+    max-height: 100px;
+    animation: logoTransition 1s infinite alternate ease-in-out;
+}
+
+/* Animation */
+@keyframes logoTransition {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* top-right link */
+.top-right-link a {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 5%;
+    font-size: 24px;
+    text-shadow: 0px -2px 4px #fff, 0px -2px 10px #FF3, 0px -10px 20px #F90, 0px -20px 40px #C33;
+}
+
+/* content section (centered content) */
+.content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* heading */
+.content h1 {
+    font-size: 90px; 
+    font-family: 'Papyrus';
+    color: #f5f5f5;
+    text-shadow: 0px -2px 4px #fff, 0px -2px 10px #FF3, 0px -10px 20px #F90, 0px -20px 40px #C33;
+}
+
+.content h1 span {
+    font-size: 50px; 
+    font-family: 'Papyrus';
+    color: #f5f5f5;
+    text-shadow: 0px -2px 4px #fff, 0px -2px 10px #FF3, 0px -10px 20px #F90, 0px -20px 40px #C33;
+}
+
+.circular-button-container {
+    text-align: center;
+}
+
+/* circular button */
+.circular-button {
+    position: absolute;
+    right: -12%;
+    top: 65%;
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%; 
+    background-color: rgb(255, 153, 0);
+    color: #fff; 
+    border: none;
+    cursor: pointer;
+    font-size: 22px; 
+    opacity: 80%;
+    font-family: 'Gabriola';
+}
+
+/* footer section (section scroll button) */
+.footer {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Style the buttons */
+.footer button {
+    margin: 0 50px;
+    padding: 10px 20px;
+    background-color: #F90;
+    color: white;
+    opacity: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px; 
+    transition: background-color 0.3s ease; 
+    font-family: 'Gabriola';
+    font-size: 20px;
+}
+
+/* Change button color on hover */
+.footer button:hover {
+    background-color: #C33;
+}
+
+
+/* new section */
+.new-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-color: #f2f2f2; 
+    text-align: center;
+}
+
+/* background image within the new section */
+.new-section .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background1.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+}
+
+.section-title {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    background-color: black; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Papyrus';
+    font-size: 24px;
+    color: white; 
+    z-index: 2; 
+}
+
+/* new section 3 */
+.new-section3 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+/* background image within the new section */
+.new-section3 .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background3.jpg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; 
+}
+
+/* Back to Top button */
+.back-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    z-index: 1;
+    transition: 0.5s ease;
+}
+
+.back-to-top-button:hover {
+    width: 60px;
+    height: 60px;
+}
+
+/* Up arrow icon */
+.up-arrow-icon {
+    width: 60px;
+    height: 50px;
+    fill: #fff;
+}
+
+/* Swiper container */
+.swiper {
+    width: 1400px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.148);
+    top: 15%;
+    z-index: 1;
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Swiper slides */
+.swiper-slide {
+    width: 100%; 
+    text-align: center; 
+}
+
+/* Slide content */
+.slide-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px; 
+    height: 100%;
+    position: absolute;
+    top: -4%;
+}
+
+/* Slide image */
+.slide-image {
+    flex: 1; 
+    padding: 10px; 
+    position: relative;
+}
+
+/* Slide description */
+.slide-description {
+    flex: 1; 
+    padding: 10px;
+    font-size: 21px;
+    text-align: right;
+}
+
+/* Optional: to center the image and text vertically */
+.slide-image img,
+.slide-description p {
+    display: block;
+    margin: 0 auto;
+}
+
+.slide-image img {
+    width: 135%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.slide-description h2 {
+    font-family: Papyrus;
+}
+
+
+/* new section 2 */
+.new-section2 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+/* background image within the new section */
+.new-section2 .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+}
+
+/* Left div */
+.left-div {
+    padding: 20px;
+    margin-left: 20px;
+    background-color: #ccc;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    position: relative;
+    height: 60%;
+    width: 1200px;
+}
+
+.left-div img {
+    position: absolute;
+    top: -10%;
+}
+
+/* Title text rectangle box */
+.title-rectangle {
+    background-color: rgb(255, 153, 0);
+    color: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    top: 65%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 3;
+    width: 700px;
+    text-align: right;
+    font-family: Papyrus;
+    font-size: 24px;
+}
+
+/* Center div */
+.center-div {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    width: 20%;
+    height: 60%;
+    z-index: 4;
+    align-items: center;
+    justify-content: center;
+}
+
+model-viewer {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    right: -60%;
+    top: -30%;
+  }
+
+/* Circular buttons container */
+.circular-button-container2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    right: 250px;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+/* Small circular buttons */
+.small-button {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 153, 0);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 30px; 
+}
+
+.small-button:hover {
+    background-color: #C33;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+/* New Section 4 */
+.new-section4 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-div {
+    flex: 1; 
+    background-color: rgb(255, 153, 0);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.top-div i {
+    font-size: 80px;
+    margin: 80px;
+    color: black;
+}
+
+.top-div span {
+    font-size: 21px;
+    text-align: center;
+}
+
+.bottom-div {
+    flex: 2; 
+    background-color: black; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center;
+    font-family: Papyrus;
+    color: white;
+}
+
+.bottom-div h3 {
+    font-size: 30px;
+}
+
+.bottom-div h1 {
+    font-size: 50px;
+}
+
+.bottom-div p {
+    font-size: 18px;
+}
